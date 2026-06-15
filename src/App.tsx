@@ -207,9 +207,6 @@ function Hero() {
   "role":     "Software Developer",
   "location": "Gurugram, IN",
   "stack":    ["Java","React","Node","PHP"],
-  "focus":    "perf · a11y · DX",
-  "shipped":  "8+ client sites",
-  "growth":   "500 → 6,120 clicks/mo",
   "status":   "open to opportunities"
 }`}
             </pre>
@@ -237,7 +234,7 @@ function Stat({ k, v }: { k: string; v: string }) {
 }
 
 function Marquee() {
-  const items = ["React", "Node.js", "Java", "SpringBoot", "PHP", "WordPress", "MongoDB", "Tailwind", "Twilio", "REST APIs", "WCAG", "Shopify"];
+  const items = ["React", "Node.js", "Java", "SpringBoot", "PHP", "WordPress", "MongoDB", "Tailwind", "Twillio", "REST APIs", "WCAG", "Shopify"];
   const row = [...items, ...items];
   return (
     <section aria-hidden className="overflow-hidden border-b border-ink bg-foreground py-4 text-background">
