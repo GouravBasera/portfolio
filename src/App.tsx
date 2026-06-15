@@ -7,6 +7,7 @@ function App() {
       <Hero />
       <Marquee />
       <About />
+      <ProblemSolving />
       <Experience />
       <Projects />
       <Stack />
@@ -254,7 +255,7 @@ function Hero() {
             <br />
             building{" "}
             <span className="relative inline-block">
-              <span className="relative z-10">Production-Ready</span>
+              <span className="relative z-10">production ready</span>
               <span
                 className="absolute inset-x-0 bottom-1 -z-0 h-4 md:h-6"
                 style={{ background: "var(--accent-yellow)" }}
@@ -414,22 +415,81 @@ function About() {
       <div className="mx-auto max-w-7xl px-5 py-20 md:py-28">
         <SectionHeader
           tag="01 — about"
-          title="The TL;DR"
-          sub="Frontend-leaning full-stack. WordPress whisperer. Spring learner. SEO past life."
+          title="From SEO to Software Engineering."
         />
+
+        <div className="mb-10 max-w-4xl text-lg text-foreground/80">
+          <p>I didn't start my career writing code.</p>
+
+          <p className="mt-4">
+            I started in SEO, where I learned how websites grow,
+            fail, and impact businesses. That curiosity eventually
+            pulled me into development.
+          </p>
+
+          <p className="mt-4">
+            Today I build production web applications, lead platform migrations, and help organizations solve technical challenges that directly impact their users.
+          </p>
+
+          <div className="mt-10 border-l-4 border-ink pl-6">
+  <p className="text-xl md:text-2xl font-medium leading-relaxed">
+    What excites me most isn't a specific framework or technology—
+    it's solving problems that make systems more reliable, secure,
+    and useful for the people who depend on them.
+  </p>
+</div>
+        </div>
+
+        <div className="mb-6 mt-12 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+  What I do today
+</div>
+
         <div className="grid gap-6 md:grid-cols-3">
           <Card
             title="Build"
-            body="Responsive UIs, RESTful services, and CMS-driven sites that hold up in production."
+            body="Production applications, integrations, and systems used by real organizations."
           />
           <Card
             title="Migrate"
-            body="Hosting moves, CMS replatforms (Ektron→WordPress), zero-downtime cutovers."
+            body="Platform migrations, automation initiatives, and zero-downtime launches."
           />
           <Card
-            title="Optimize"
-            body="Perf budgets, asset & caching strategy, accessibility audits, security hardening."
+            title="Secure"
+            body="Accessibility improvements, security hardening, incident remediation, and long-term platform reliability."
           />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ProblemSolving() {
+  const items = [
+    "Recovering and securing compromised websites",
+    "Building systems that automate repetitive work",
+    "Designing APIs and integrations",
+    "Improving accessibility and usability",
+    "Migrating legacy platforms with minimal disruption",
+    "Turning technical problems into practical solutions",
+  ];
+
+  return (
+    <section className="border-b border-ink">
+      <div className="mx-auto max-w-7xl px-5 py-20">
+        <SectionHeader
+          tag="01.5 — mindset"
+          title="Things I enjoy solving."
+        />
+
+        <div className="grid gap-4 md:grid-cols-2">
+          {items.map((item) => (
+            <div
+              key={item}
+              className="border-2 border-ink bg-card p-4 shadow-brutal"
+            >
+              {item}
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -455,6 +515,13 @@ function Experience() {
           tag="02 — experience"
           title="Where I've been shipping."
         />
+        <p className="mb-10 max-w-4xl text-foreground/80">
+  Most of my experience has been spent solving production
+  problems: migrating critical platforms, recovering compromised
+  systems, improving accessibility, automating workflows, and
+  supporting organizations that depend on their web presence
+  every day.
+</p>
         <div className="border-2 border-ink bg-card shadow-brutal-lg">
           {EXPERIENCE.map((e, i) => (
             <article
@@ -639,16 +706,23 @@ function Contact() {
             05 — contact
           </div>
           <h2 className="mt-4 font-display text-4xl font-extrabold leading-[1] tracking-tight md:text-7xl">
-            Got a project?
+            Let's Solve
             <br />
             <span style={{ color: "var(--accent-yellow)" }}>
-              Let&apos;s build it.
+              something interesting.
             </span>
           </h2>
           <p className="mt-6 max-w-xl text-background/70 md:text-lg">
-            Open to full-time roles and select freelance engagements. Fastest
-            reply via email.
-          </p>
+  Whether it's a software engineering opportunity, a backend
+  project, a platform migration, or a difficult technical
+  challenge, I'd love to hear about it.
+
+  <br />
+  <br />
+
+  The best conversations usually start with an interesting
+  problem.
+</p>
           <div className="mt-10 grid gap-3 md:grid-cols-3">
             <ContactLink
               label="email"
@@ -706,8 +780,7 @@ function Footer() {
     <footer className="bg-background">
       <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-3 px-5 py-8 md:flex-row md:items-center">
         <div className="font-mono text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Gourav Basera · built with care in
-          Gurugram
+          Built with curiosity, shaped by real-world problems, and always a work in progress.
         </div>
         <div className="font-mono text-xs text-muted-foreground">
           v1.0 · last_deploy:{" "}
