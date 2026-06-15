@@ -169,20 +169,20 @@ function Hero() {
             available for select work · q3 2026
           </div>
           <h1 className="font-display text-5xl font-extrabold leading-[0.95] tracking-tight md:text-7xl lg:text-8xl">
-            Software developer
+            Software Developer
             <br />
-            shipping <span className="relative inline-block">
-              <span className="relative z-10">fast, accessible</span>
+            building <span className="relative inline-block">
+              <span className="relative z-10">Production-Ready</span>
               <span
                 className="absolute inset-x-0 bottom-1 -z-0 h-4 md:h-6"
                 style={{ background: "var(--accent-yellow)" }}
               />
             </span>
             <br />
-            web experiences.
+            web applications.
           </h1>
           <p className="mt-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
-            I&apos;m <strong className="text-foreground">Gourav</strong> — building responsive sites, custom platforms, and CMS migrations across <span className="font-mono">React</span>, <span className="font-mono">Node</span>, <span className="font-mono">Java/Spring</span>, <span className="font-mono">PHP</span>, and <span className="font-mono">WordPress</span>. Currently at <strong className="text-foreground">OculusIT</strong>, Gurugram.
+            <strong className="text-foreground">Software Developer</strong> with 3+ years of experience building <span className="font-mono">React</span>, <span className="font-mono">Node.js</span>, <span className="font-mono">Java</span>, <span className="font-mono">Spring Boot</span>, <span className="font-mono">PHP</span>, and <span className="font-mono">WordPress</span>. Currently at <strong className="text-foreground">OculusIT</strong>, Gurugram.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <a href="#projects" className="group inline-flex items-center gap-2 border-2 border-ink bg-foreground px-5 py-3 font-mono text-sm font-bold text-background shadow-brutal transition-transform hover:-translate-y-0.5 hover:translate-x-0 hover:shadow-brutal-lg">
@@ -206,11 +206,14 @@ function Hero() {
             </div>
             <pre className="overflow-x-auto px-4 py-4 font-mono text-[12px] leading-relaxed">
 {`{
-  "name":     "Gourav Basera",
-  "role":     "Software Developer",
+  "name": "Gourav Basera",
+  "role": "Software Developer",
+  "experience": "3+ years",
   "location": "Gurugram, IN",
-  "stack":    ["Java","React","Node","PHP"],
-  "status":   "open to opportunities"
+  "specialization": "Web Applications",
+  "stack": ["Java","React","Node","PHP"],
+  "sites_shipped": "12+",
+  "status": "open to opportunities"
 }`}
             </pre>
           </div>
