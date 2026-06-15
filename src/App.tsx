@@ -24,6 +24,7 @@ const NAV = [
   { label: "Projects", href: "#projects" },
   { label: "Stack", href: "#stack" },
   { label: "Contact", href: "#contact" },
+  { label: "Resume", href: "/resume.pdf" },
 ];
 
 const EXPERIENCE = [
@@ -134,12 +135,14 @@ function Nav() {
         <nav className="hidden items-center gap-1 md:flex">
           {NAV.map((n) => (
             <a
-              key={n.href}
-              href={n.href}
-              className="rounded px-3 py-1.5 font-mono text-xs uppercase tracking-wider text-muted-foreground transition-colors hover:bg-foreground hover:text-background"
-            >
-              {n.label}
-            </a>
+  key={n.href}
+  href={n.href}
+  target={n.label === "Resume" ? "_blank" : undefined}
+  rel={n.label === "Resume" ? "noopener noreferrer" : undefined}
+  className="rounded px-3 py-1.5 font-mono text-xs uppercase tracking-wider text-muted-foreground transition-colors hover:bg-foreground hover:text-background"
+>
+  {n.label}
+</a>
           ))}
         </nav>
         <a
